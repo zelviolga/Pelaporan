@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
     tools:context=".Data">
 
-    <TextView
-        android:text="Data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/reporttl"
+        android:layout_marginLeft="60dp"
+        android:text=" REPORT TOWER LAMP"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="140dp"
+        android:layout_height="60dp">
 
-    </TextView>
+    </Button>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/reportwp"
+        android:text="REPORT WATER PUMP"
+        android:layout_marginLeft="40dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="140dp"
+        android:layout_height="60dp">
+
+    </Button>
+
+
+</LinearLayout>

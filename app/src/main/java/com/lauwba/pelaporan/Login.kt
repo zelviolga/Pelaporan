@@ -26,6 +26,12 @@ class Login : AppCompatActivity() {
         login.setOnClickListener {
             get_data_login().execute()
         }
+
+        register.setOnClickListener {
+            var intent = intent
+            intent = Intent(this@Login, Register::class.java)
+            startActivity(intent)
+        }
     }
 
     inner class get_data_login : AsyncTask<String, Void, String>(){
@@ -65,7 +71,6 @@ class Login : AppCompatActivity() {
             }catch(e:Exception){
                 e.printStackTrace()
             }
-
         }
 
     }
