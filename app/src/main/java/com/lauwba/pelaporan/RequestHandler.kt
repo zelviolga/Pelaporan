@@ -6,13 +6,14 @@ import java.io.*
 import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
-import java.util.HashMap
 import javax.net.ssl.HttpsURLConnection
+import kotlin.collections.HashMap
 
 class RequestHandler {
 
-    fun sendPostRequest(requestURL: String,
-                        postDataParams: HashMap<String, String>
+    fun sendPostRequest(
+        requestURL: String,
+        postDataParams: HashMap<String, String>
     ): String {
         val url: URL
 
